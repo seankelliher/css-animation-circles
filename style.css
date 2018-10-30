@@ -1,6 +1,6 @@
 /*Fonts*/
 h2 {
-    font: 600 2.25em/1.5 "myriad-pro-semi-condensed",sans-serif;
+    font: 600 2.25em/1.5 Arial, Helvetica, sans-serif;
     /*36px/54px*/
     /*color: #374140;*/
     color: #000;
@@ -9,7 +9,7 @@ h2 {
 }
 
 h3 {
-    font: 600 1.5em/2.25 "myriad-pro-semi-condensed",sans-serif;
+    font: 600 1.5em/2.25 Arial, Helvetica, sans-serif;
     /*24px/54px*/
     color: #e53935;
     margin: 0;
@@ -17,7 +17,7 @@ h3 {
 }
 
 h5 {
-    font: 400 0.75em/1.16666666667 "myriad-pro",sans-serif;
+    font: 400 0.75em/1.16666666667 Arial, Helvetica, sans-serif;
     /*12px/14px*/
     color: #fff;
     margin: 0;
