@@ -1,20 +1,20 @@
 /*Fonts*/
-h2 {
-    font: 600 2.25em/1.5 Arial, Helvetica, sans-serif;
+h1 {
+    font: 600 2.25em/1.5 'Francois One', sans-serif;
     color: #000;
     margin: 0;
     padding: 0;
 }
 
-h3 {
-    font: 600 1.5em/2.25 Arial, Helvetica, sans-serif;
+h2 {
+    font: 600 1.5em/2.25 'Francois One', sans-serif;
     color: #d32f2f;
     margin: 0;
     padding: 0;
 }
 
-h5 {
-    font: 400 0.75em/1.16666666667 Arial, Helvetica, sans-serif;
+p {
+    font: 400 0.75em/1.16666666667 'Merriweather', serif;
     color: #fff;
     margin: 0;
     padding: 0;
