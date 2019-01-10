@@ -173,10 +173,3 @@ figcaption {
     content: "";
     display: table;
 }
-
-main {
-    width: 790px;
-    margin: 40px 20px;
-    padding: 0;
-    float: left;
-}
