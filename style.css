@@ -6,6 +6,10 @@ h1 {
     padding: 0;
 }
 
+figure {
+    float: left;
+}
+
 figcaption {
     font: 400 0.75em/1.16666666667 'Merriweather', serif;
     color: #fff;
@@ -25,12 +29,15 @@ header {
     width: 90%;
     margin: 0;
     padding:  1em 5%;
+    background: yellow;
 }
 
 section {
     width: 90%;
     margin: 0;
     padding:  1em 5%;
+    background: hotpink;
+    float: left;
 }
 
 /*Clearfix for section*/
