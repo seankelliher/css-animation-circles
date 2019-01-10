@@ -13,6 +13,33 @@ figcaption {
     padding: 0;
 }
 
+/*Containing elements*/
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    width: 90%;
+    margin: 0;
+    padding:  1em 5%;
+}
+
+section {
+    width: 90%;
+    margin: 0;
+    padding:  1em 5%;
+}
+
+/*Clearfix for section*/
+.section::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 /*Circles*/
 .blue {
     width: 70px;
@@ -153,16 +180,4 @@ figcaption {
     } 
 }
 
-/*Containing elements*/
-.container {
-    width: 830px;
-    margin: 0 auto;
-    padding: 0;
-}
 
-/*Clearfix for container*/
-.container::after {
-    clear: both;
-    content: "";
-    display: table;
-}
