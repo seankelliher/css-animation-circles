@@ -22,30 +22,33 @@ figcaption {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0;
+    padding: 1em 0;
+    background: blue;
+}
+
+/*Clearfix for section*/
+.container::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 
 header {
     width: 90%;
-    margin: 0;
-    padding:  1em 5%;
+    margin: 1em 5%;
+    padding: 0;
     background: yellow;
 }
 
 section {
     width: 90%;
-    margin: 0;
-    padding:  1em 5%;
+    margin: 1em 5%;
+    padding:  0;
     background: hotpink;
     float: left;
 }
 
-/*Clearfix for section*/
-.section::after {
-    clear: both;
-    content: "";
-    display: table;
-}
+
 
 /*Circles*/
 .blue {
