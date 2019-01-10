@@ -1,29 +1,3 @@
-/*Fonts*/
-h1 {
-    font: 600 2.25em/1.5 'Francois One', sans-serif;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
-figure {
-    width: 6em;
-    height: 6em;
-    margin-right: 2em;
-    border-radius: 50%;
-    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    float: left;
-}
-
-figcaption {
-    font: 400 0.75em/1.16666666667 'Merriweather', serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-/*Containing elements*/
 .container {
     width: 100%;
     max-width: 1000px;
@@ -48,6 +22,16 @@ section::after {
     clear: both;
     content: "";
     display: table;
+}
+
+figure {
+    width: 6em;
+    height: 6em;
+    margin-right: 2em;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    float: left;
 }
 
 /*Circles*/
@@ -77,6 +61,21 @@ section::after {
 
 .forest{
     background: #689f38;
+}
+
+/*Fonts*/
+h1 {
+    font: 600 2.25em/1.5 'Francois One', sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font: 400 0.75em/1.16666666667 'Merriweather', serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 /*Animations*/
@@ -121,5 +120,3 @@ section::after {
         transform: translate(0, 0) rotate(-360deg);
     } 
 }
-
-
