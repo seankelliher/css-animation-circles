@@ -9,6 +9,7 @@ h1 {
 figure {
     width: 6em;
     height: 6em;
+    margin-right: 2em;
     border-radius: 50%;
     box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -82,11 +83,6 @@ section {
 
 .forest{
     background: #689f38;
-}
-
-/*Margins and Padding Classes - use universally*/
-.skills-circle-margins {
-    margin-right: 30px;
 }
 
 /*Animations*/
