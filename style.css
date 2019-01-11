@@ -30,13 +30,17 @@ figure {
     margin: 1em 2em 1em 0;
     padding: 0;
     border-radius: 50%;
-    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .25em .25em .15em rgba(0, 0, 0, 0.2);
     display: flex;
     flex-flow: row wrap; /*shorthand for flex-direction, and flex-wrap*/
     align-items: center;
     justify-content: center;
     text-align: center;
     float: left;
+}
+
+figure:last-child {
+    margin: 1em 0 1em 0;
 }
 
 figcaption {
@@ -108,15 +112,21 @@ h1 {
     animation: rollIn 8s ease;
 }
 
+/*Notes on calculating transform*/
+/*6em figure width + 2 em right margin = 8em per figure*/
+/*Longest line is 5 figures or 40 em total*/
+/*40em - 2em (last child has no right margin) = 38em*/
+/*Section is 56.25em. Figures take up 38em. Extra space for transform is 18.25em*/
+
 @-webkit-keyframes rollIn {
     0% {
-        transform: translate(200%, 0) rotate(0);
+        transform: translate(18.25em, 0) rotate(0); /*18.25em = 292px*/
     }
     20% {
-        transform: translate(200%, 0) rotate(360deg);
+        transform: translate(18.25em, 0) rotate(360deg);
     }
     30% {
-        transform: translate(200%, 0) rotate(360deg);
+        transform: translate(18.25em, 0) rotate(360deg);
     }
     100% {
         transform: translate(0, 0) rotate(-360deg);
@@ -125,13 +135,13 @@ h1 {
 
 @-moz-keyframes rollIn {
     0% {
-        transform: translate(200%, 0) rotate(0);
+        transform: translate(18.25em, 0) rotate(0);
     }
     20% {
-        transform: translate(200%, 0) rotate(360deg);
+        transform: translate(18.25em, 0) rotate(360deg);
     }
     30% {
-        transform: translate(200%, 0) rotate(360deg);
+        transform: translate(18.25em, 0) rotate(360deg);
     }
     100% {
         transform: translate(0, 0) rotate(-360deg);
@@ -140,13 +150,13 @@ h1 {
 
 @keyframes rollIn {
     0% {
-        transform: translate(200%, 0) rotate(0);
+        transform: translate(18.25em, 0) rotate(0);
     }
     20% {
-        transform: translate(200%, 0) rotate(360deg);
+        transform: translate(18.25em, 0) rotate(360deg);
     }
     30% {
-        transform: translate(200%, 0) rotate(360deg);
+        transform: translate(18.25em, 0) rotate(360deg);
     }
     100% {
         transform: translate(0, 0) rotate(-360deg);
