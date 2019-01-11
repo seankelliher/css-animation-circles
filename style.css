@@ -40,33 +40,19 @@ figure {
 }
 
 /*Circles*/
-.blue {
-    background: #005b9f;
+.indigo {
+    background: #00227b; /*indigo 600 dark*/
 }
 
-.aqua {
-    background: #56c8d8;
+.deep-orange {
+    background: #b91400; /*deep orange 600 dark*/
 }
 
-.orange {
-    background: #ffa000;
+.grey {
+    background: #494949; /*grey 600 dark*/
+    color: #000;
 }
 
-.tan {
-    background: #8e8e8e;
-}
-
-.teal {
-    background: #48a999;
-}
-
-.gold{
-    background: #fbc02d;
-}
-
-.forest{
-    background: #689f38;
-}
 
 /*Fonts*/
 h1 {
@@ -107,11 +93,18 @@ figcaption {
     font-family: 'Merriweather', serif;
     font-size: 0.875em;
     line-height: 1.5;
-    color: #fff;
     margin: 0;
     padding: 0;
     flex: auto; /*shorthand for flex-grow, flex-shrink, and flex-basis*/
     /*using auto is same as using flex: 1 1 auto*/
+}
+
+.white-text {
+    color: #fff;
+}
+
+.black-text {
+    color: #000;
 }
 
 /*Animations*/
