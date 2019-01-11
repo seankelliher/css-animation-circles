@@ -39,6 +39,16 @@ figure {
     float: left;
 }
 
+figcaption {
+    font-family: 'Merriweather', serif;
+    font-size: 0.875em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    flex: auto; /*shorthand for flex-grow, flex-shrink, and flex-basis*/
+    /*using auto is same as using flex: 1 1 auto*/
+}
+
 /*Circles*/
 .blue {
     background: #0077c2; /*blue 400 dark*/
@@ -46,7 +56,6 @@ figure {
 
 .lime {
     background: #a0af22; /*lime 400 dark*/
-
 }
 
 /*Fonts*/
@@ -82,16 +91,6 @@ h1 {
     h1 {
         font-size: 1.6em;
     }
-}
-
-figcaption {
-    font-family: 'Merriweather', serif;
-    font-size: 0.875em;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
-    flex: auto; /*shorthand for flex-grow, flex-shrink, and flex-basis*/
-    /*using auto is same as using flex: 1 1 auto*/
 }
 
 .white-text {
