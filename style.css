@@ -40,19 +40,14 @@ figure {
 }
 
 /*Circles*/
-.indigo {
-    background: #00227b; /*indigo 600 dark*/
+.blue {
+    background: #0077c2; /*blue 400 dark*/
 }
 
-.deep-orange {
-    background: #b91400; /*deep orange 600 dark*/
-}
+.lime {
+    background: #a0af22; /*lime 400 dark*/
 
-.grey {
-    background: #494949; /*grey 600 dark*/
-    color: #000;
 }
-
 
 /*Fonts*/
 h1 {
