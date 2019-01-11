@@ -109,17 +109,20 @@ figcaption {
 
 /*Animations*/
 .skills-rollin {
-    -webkit-animation: rollIn 3s ease;
-    -moz-animation: rollIn 3s ease;
-    animation: rollIn 3s ease;
+    -webkit-animation: rollIn 8s ease;
+    -moz-animation: rollIn 8s ease;
+    animation: rollIn 8s ease;
 }
 
 @-webkit-keyframes rollIn {
     0% {
-        transform: translate(20px, 0) rotate(0);
+        transform: translate(200%, 0) rotate(0);
     }
-    10% {
-        transform: translate(20px, 0) rotate(0);
+    20% {
+        transform: translate(200%, 0) rotate(360deg);
+    }
+    30% {
+        transform: translate(200%, 0) rotate(360deg);
     }
     100% {
         transform: translate(0, 0) rotate(-360deg);
@@ -128,10 +131,13 @@ figcaption {
 
 @-moz-keyframes rollIn {
     0% {
-        transform: translate(20px, 0) rotate(0);
+        transform: translate(200%, 0) rotate(0);
     }
-    10% {
-        transform: translate(20px, 0) rotate(0);
+    20% {
+        transform: translate(200%, 0) rotate(360deg);
+    }
+    30% {
+        transform: translate(200%, 0) rotate(360deg);
     }
     100% {
         transform: translate(0, 0) rotate(-360deg);
@@ -140,10 +146,13 @@ figcaption {
 
 @keyframes rollIn {
     0% {
-        transform: translate(20px, 0) rotate(0);
+        transform: translate(200%, 0) rotate(0);
     }
-    10% {
-        transform: translate(20px, 0) rotate(0);
+    20% {
+        transform: translate(200%, 0) rotate(360deg);
+    }
+    30% {
+        transform: translate(200%, 0) rotate(360deg);
     }
     100% {
         transform: translate(0, 0) rotate(-360deg);
