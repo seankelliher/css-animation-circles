@@ -104,7 +104,9 @@ h1 {
 }
 
 figcaption {
-    font: 400 0.75em/1.16666666667 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
+    font-size: 0.875em;
+    line-height: 1.5;
     color: #fff;
     margin: 0;
     padding: 0;
