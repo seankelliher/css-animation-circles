@@ -25,9 +25,6 @@ section::after {
 }
 
 figure {
-    width: 6em;
-    height: 6em;
-    margin: 1em 2em 1em 0;
     padding: 0;
     border-radius: 50%;
     box-shadow: 0 .25em .25em .15em rgba(0, 0, 0, 0.2);
@@ -39,18 +36,87 @@ figure {
     float: left;
 }
 
-figure:last-child {
-    margin: 1em 0 1em 0;
-}
-
 figcaption {
     font-family: 'Merriweather', serif;
-    font-size: 0.875em;
     line-height: 1.5;
     margin: 0;
     padding: 0;
     flex: auto; /*shorthand for flex-grow, flex-shrink, and flex-basis*/
     /*using auto is same as using flex: 1 1 auto*/
+}
+
+@media all and (min-width: 300px) {
+
+    figure {
+        width: 2.8em;
+        height: 2.8em;
+        margin: .5em 1em .5em 0;
+    }
+
+    figure:last-child {
+        margin: .5em 0 .5em 0;
+    }
+
+    figcaption {
+        font-size: 0.625em;
+    }
+}
+
+@media all and (min-width: 400px) {
+
+    figure {
+        width: 3em;
+        height: 3em;
+        /*margin inherited*/
+    }
+    /*figure:last-child - inherited*/
+    /*figcaption - inherited*/
+}
+
+@media all and (min-width: 500px) {
+
+    figure {
+        width: 4em;
+        height: 4em;
+        /*margin inherited*/
+    }
+
+    /*figure:last-child - inherited*/
+
+    figcaption {
+        font-size: 0.75em;
+    }
+}
+
+@media all and (min-width: 600px) {
+
+    figure {
+        width: 5em;
+        height: 5em;
+        margin: .75em 1.5em .75em 0;
+    }
+
+    figure:last-child {
+        margin: .75em 0 .75em 0;
+    }
+    /*figcaption - inherited*/
+}
+
+@media all and (min-width: 800px) {
+
+    figure {
+        width: 6em;
+        height: 6em;
+        margin: 1em 2em 1em 0;
+    }
+
+    figure:last-child {
+        margin: 1em 0 1em 0;
+    }
+
+    figcaption {
+        font-size: 0.875em;
+    }
 }
 
 /*Circles*/
@@ -112,53 +178,389 @@ h1 {
     animation: rollIn 8s ease;
 }
 
-/*Notes on calculating transform*/
-/*6em figure width + 2 em right margin = 8em per figure*/
-/*Longest line is 5 figures or 40 em total*/
-/*40em - 2em (last child has no right margin) = 38em*/
-/*Section is 56.25em. Figures take up 38em. Extra space for transform is 18.25em*/
+/*Media queries for transforms*/
+/*The only change per query is the number of ems in translate*/
+/*AKA - the distance circles roll to the left*/
+@media all and (min-width: 300px) {
 
-@-webkit-keyframes rollIn {
-    0% {
-        transform: translate(18.25em, 0) rotate(0); /*18.25em = 292px*/
+    @-webkit-keyframes rollIn {
+        0% {
+            transform: translate(2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
     }
-    20% {
-        transform: translate(18.25em, 0) rotate(360deg);
-    }
-    30% {
-        transform: translate(18.25em, 0) rotate(360deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(-360deg);
-    }
-}
 
-@-moz-keyframes rollIn {
-    0% {
-        transform: translate(18.25em, 0) rotate(0);
+    @-moz-keyframes rollIn {
+        0% {
+            transform: translate(2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
     }
-    20% {
-        transform: translate(18.25em, 0) rotate(360deg);
-    }
-    30% {
-        transform: translate(18.25em, 0) rotate(360deg);
-    }
-    100% {
-        transform: translate(0, 0) rotate(-360deg);
-    }
-}
 
-@keyframes rollIn {
-    0% {
-        transform: translate(18.25em, 0) rotate(0);
+    @keyframes rollIn {
+        0% {
+            transform: translate(2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        } 
     }
-    20% {
-        transform: translate(18.25em, 0) rotate(360deg);
+} /*media query close*/
+
+@media all and (min-width: 400px) {
+
+    @-webkit-keyframes rollIn {
+        0% {
+            transform: translate(2.4em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(2.4em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(2.4em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
     }
-    30% {
-        transform: translate(18.25em, 0) rotate(360deg);
+
+    @-moz-keyframes rollIn {
+        0% {
+            transform: translate(2.4em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(2.4em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(2.4em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
     }
-    100% {
-        transform: translate(0, 0) rotate(-360deg);
-    } 
-}
+
+    @keyframes rollIn {
+        0% {
+            transform: translate(2.4em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(2.4em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(2.4em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        } 
+    }
+} /*media query close*/
+
+@media all and (min-width: 500px) {
+
+    @-webkit-keyframes rollIn {
+        0% {
+            transform: translate(3.2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(3.2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(3.2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @-moz-keyframes rollIn {
+        0% {
+            transform: translate(3.2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(3.2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(3.2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @keyframes rollIn {
+        0% {
+            transform: translate(3.2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(3.2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(3.2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        } 
+    }
+} /*media query close*/
+
+@media all and (min-width: 600px) {
+
+    @-webkit-keyframes rollIn {
+        0% {
+            transform: translate(1.8em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(1.8em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(1.8em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @-moz-keyframes rollIn {
+        0% {
+            transform: translate(1.8em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(1.8em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(1.8em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @keyframes rollIn {
+        0% {
+            transform: translate(1.8em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(1.8em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(1.8em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        } 
+    }
+} /*media query close*/
+
+@media all and (min-width: 700px) {
+
+    @-webkit-keyframes rollIn {
+        0% {
+            transform: translate(7.2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(7.2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(7.2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @-moz-keyframes rollIn {
+        0% {
+            transform: translate(7.2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(7.2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(7.2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @keyframes rollIn {
+        0% {
+            transform: translate(7.2em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(7.2em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(7.2em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        } 
+    }
+} /*media query close*/
+
+@media all and (min-width: 800px) {
+
+    @-webkit-keyframes rollIn {
+        0% {
+            transform: translate(5.8em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(5.8em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(5.8em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @-moz-keyframes rollIn {
+        0% {
+            transform: translate(5.8em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(5.8em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(5.8em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @keyframes rollIn {
+        0% {
+            transform: translate(5.8em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(5.8em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(5.8em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        } 
+    }
+} /*media query close*/
+
+@media all and (min-width: 900px) {
+
+    @-webkit-keyframes rollIn {
+        0% {
+            transform: translate(11.6em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(11.6em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(11.6em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @-moz-keyframes rollIn {
+        0% {
+            transform: translate(11.6em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(11.6em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(11.6em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @keyframes rollIn {
+        0% {
+            transform: translate(11.6em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(11.6em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(11.6em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        } 
+    }
+} /*media query close*/
+
+@media all and (min-width: 1000px) {
+
+    @-webkit-keyframes rollIn {
+        0% {
+            transform: translate(17.4em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(17.4em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(17.4em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @-moz-keyframes rollIn {
+        0% {
+            transform: translate(17.4em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(17.4em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(17.4em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        }
+    }
+
+    @keyframes rollIn {
+        0% {
+            transform: translate(17.4em, 0) rotate(0);
+        }
+        20% {
+            transform: translate(17.4em, 0) rotate(360deg);
+        }
+        30% {
+            transform: translate(17.4em, 0) rotate(360deg);
+        }
+        100% {
+            transform: translate(0, 0) rotate(-360deg);
+        } 
+    }
+} /*media query close*/
