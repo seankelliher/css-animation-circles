@@ -40,8 +40,8 @@ figcaption {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    flex: auto; /*shorthand for flex-grow, flex-shrink, and flex-basis*/
-    /*using auto is same as using flex: 1 1 auto*/
+    flex: initial; /*shorthand for flex-grow 0, flex-shrink 1, flex-basis auto*/
+    color: #fff;
 }
 
 @media all and (min-width: 300px) {
