@@ -140,14 +140,6 @@ h1 {
     }
 }
 
-.white-text {
-    color: #fff;
-}
-
-.black-text {
-    color: #000;
-}
-
 /*Animations*/
 .skills-rollin {
     -webkit-animation: rollIn 8s ease;
