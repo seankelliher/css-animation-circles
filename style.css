@@ -18,7 +18,9 @@ section {
     width: 90%;
     margin: 1em 5%;
     padding:  0;
+    background: #fff;
     display: flow-root;
+    float: left;
 }
 
 figure {
