@@ -145,6 +145,9 @@ h1 {
     -webkit-animation: rollIn 8s ease;
     -moz-animation: rollIn 8s ease;
     animation: rollIn 8s ease;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
 }
 
 /*Media queries for transforms*/
