@@ -28,7 +28,7 @@ figure {
     border-radius: 50%;
     box-shadow: 0 .25em .25em .15em rgba(0, 0, 0, 0.2);
     display: flex;
-    flex-flow: row wrap; /*shorthand for flex-direction, and flex-wrap*/
+    flex-flow: row nowrap; /*shorthand for flex-direction, and flex-wrap*/
     align-items: center;
     justify-content: center;
     text-align: center;
