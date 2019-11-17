@@ -38,6 +38,7 @@ figure {
 figcaption {
     font-family: 'Merriweather', serif;
     line-height: 1.5;
+    font-weight: 400;
     margin: 0;
     padding: 0;
     flex: initial; /*shorthand for flex-grow 0, flex-shrink 1, flex-basis auto*/
@@ -109,7 +110,7 @@ figcaption {
 h1 {
     font-family: 'Francois One', sans-serif;
     line-height: 1.4;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
