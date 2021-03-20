@@ -97,3 +97,21 @@ section figure {
        transform: scale(1) rotate(0deg);
     }
 }
+
+aside {
+    width: 18vw;
+    height: 3vw;
+    margin: 4vw 0 0 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+    position: relative;
+}
+
+aside figure {
+    width: 1vw;
+    height: 1vw;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    position: absolute;
+}
