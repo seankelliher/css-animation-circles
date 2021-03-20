@@ -15,5 +15,5 @@ My goal was to build something that utilized fairly simple CSS animation and had
 
 * Animation guidance from [Rachel Cope](https://thoughtbot.com/blog/authors/rachel-cope) at Thoughtbot.
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
-* Design guidance from Adobe Color](https://color.adobe.com/trends).
+* Design guidance from [Adobe Color](https://color.adobe.com/trends).
 * Shields from [Shields](https://shields.io).
