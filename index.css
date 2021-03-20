@@ -1,0 +1,31 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; /*main axis*/
+    align-items: center; /*cross axis*/
+}
+
+section {
+    width: 20vw;
+    height: 20vw;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    flex: initial; /*flex: 0 1 auto*/
+    position: relative;
+    animation: breathe 10s ease-in-out 0s 6;
+    animation-fill-mode: forwards;
+}
+
+section figure {
+    width: 2vw;
+    height: 2vw;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    position: absolute;
+}
