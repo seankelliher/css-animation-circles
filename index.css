@@ -164,3 +164,13 @@ aside figure {
     animation: fill 2s ease-in-out 60s 1;
     animation-fill-mode: both;
 }
+
+/*Animation for circles within aside*/
+@keyframes fill {
+    0% {
+        opacity: .2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
