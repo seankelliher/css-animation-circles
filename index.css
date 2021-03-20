@@ -29,3 +29,52 @@ section figure {
     border-radius: 50%;
     position: absolute;
 }
+
+/*Light/dark blue circles within section*/
+.one {
+    top: 0;
+    left: 9vw;
+    background: #1BCBF2;
+}
+
+.two {
+    top: 3vw;
+    left: 16vw;
+    background: #055BA6;
+}
+
+.three {
+    top: 9vw;
+    left: 18vw;
+    background: #1BCBF2;
+}
+
+.four {
+    top: 15vw;
+    left: 16vw;
+    background: #055BA6;
+}
+
+.five {
+    top: 18vw;
+    left: 9vw;
+    background: #1BCBF2;
+}
+
+.six {
+    top: 15vw;
+    left: 2vw;
+    background: #055BA6;
+}
+
+.seven {
+    top: 9vw;
+    left: 0;
+    background: #1BCBF2;
+}
+
+.eight {
+    top: 3vw;
+    left: 2vw;
+    background: #055BA6;
+}
