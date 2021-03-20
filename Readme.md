@@ -7,6 +7,10 @@ CSS animation breathing exercise. Circles expand and contract as a counter count
 
 ![screen shot of project](/screenshots/breathe-circles-screenshot1.jpg)
 
+## Installation and Setup Instructions
+
+This is a static component. All you need is a web browser.
+
 ## Reflection
 
 My goal was to build something that utilized fairly simple CSS animation and had a practical purpose. An animated breathing exercise worked. The animation itself was not too difficult. One of the main challenges was how to represent "breathing" with animated objects. I experimented with a number of techniques from using bars on a chart, to inflating balloons, to objects that changed color to simulate an increase or decrease in oxygen. The other challenge was coloring: what best represents "air" and "breathe" but also has some visual excitement.
