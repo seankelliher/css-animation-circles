@@ -115,3 +115,52 @@ aside figure {
     border-radius: 50%;
     position: absolute;
 }
+
+/*Black circles within section*/
+.count1 {
+    top: 1vw;
+    left: 1vw;
+    background: #182940;
+    animation: fill 2s ease-in-out 10s 1;
+    animation-fill-mode: both;
+}
+
+.count2 {
+    top: 1vw;
+    left: 4vw;
+    background: #182940;
+    animation: fill 2s ease-in-out 20s 1;
+    animation-fill-mode: both;
+}
+
+.count3 {
+    top: 1vw;
+    left: 7vw;
+    background: #182940;
+    animation: fill 2s ease-in-out 30s 1;
+    animation-fill-mode: both;
+}
+
+.count4 {
+    top: 1vw;
+    left: 10vw;
+    background: #182940;
+    animation: fill 2s ease-in-out 40s 1;
+    animation-fill-mode: both;
+}
+
+.count5 {
+    top: 1vw;
+    left: 13vw;
+    background: #182940;
+    animation: fill 2s ease-in-out 50s 1;
+    animation-fill-mode: both;
+}
+
+.count6 {
+    top: 1vw;
+    left: 16vw;
+    background: #182940;
+    animation: fill 2s ease-in-out 60s 1;
+    animation-fill-mode: both;
+}
