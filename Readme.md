@@ -1,26 +1,19 @@
-# CSS Animation Circles
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/breathe-circles?style=flat-square)](/LICENSE.txt)
+## Breathe Circles
 
-This is a simple CSS animation where colored circles rotate and roll.
+CSS animation breathing exercise. Circles expand and contract as a counter counts the cycles. Animation is six ten-second cycles; a one-minute total breathing exercise.
 
-## Authors
+## Project Screen Shot
 
-* **Sean Kelliher** - [seankelliher](https://github.com/seankelliher)
+![screen shot of project](/screenshots/breathe-circles-screenshot1.jpg)
 
-## Deployment
+## Reflection
 
-All you need is a web browser. Code works in a local or remote environment.
-
-## Built With
-
-* CSS
-* HTML
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+My goal was to build something that utilized fairly simple CSS animation and had a practical purpose. An animated breathing exercise worked. The animation itself was not too difficult. One of the main challenges was how to represent "breathing" with animated objects. I experimented with a number of techniques from using bars on a chart, to inflating balloons, to objects that changed color to simulate an increase or decrease in oxygen. The other challenge was coloring: what best represents "air" and "breathe" but also has some visual excitement.
 
 ## Acknowledgments
 
-* Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
-* Design guidance from Google's [Material Design](https://material.io/design).
-* Fonts from [Google Fonts](https://fonts.google.com).
+* Animation guidance from [Rachel Cope](https://thoughtbot.com/blog/authors/rachel-cope) at Thoughtbot.
+* Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
+* Design guidance from Adobe Color](https://color.adobe.com/trends).
+* Shields from [Shields](https://shields.io).
