@@ -78,3 +78,22 @@ section figure {
     left: 2vw;
     background: #055BA6;
 }
+
+/*Animation for circles within section*/
+@keyframes breathe {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+    5% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.4) rotate(15deg);
+    }
+    60% {
+        transform: scale(1.4) rotate(15deg);
+    }
+    100% {
+       transform: scale(1) rotate(0deg);
+    }
+}
